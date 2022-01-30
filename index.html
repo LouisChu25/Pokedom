@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="title">Welcome to the <br> POKEDOM</h1>
+    <p class="welcome">Are you a Pokemon Fan ?<br>This fansite allows to view pokemons and their anime series by generations. You can sort them by types AND HEAR THEIR SOUNDS so make sure to turn up your volume when clicking on the cards. </p>
+    <div class="select">
+        <select name="gen" id="generation">
+            <option disabled selected value="">Choose a generation</option>
+            <option value="1">1st Generation</option>
+            <option value="2">2nd Generation</option>
+            <option value="3">3rd Generation</option>
+            <option value="4">4th Generation</option>
+            <option value="5">5th Generation</option>
+            <option value="6">6th Generation</option>
+            <option value="7">7th Generation</option>
+            <option value="8">8th Generation</option>
+        </select>
+    </div>
+   <div class="container_type">
+    <select class="select_type" name="type">
+        <option disabled selected value="">Sort by type</option>
+        <option value="fire">Feu</option>
+        <option value="water">Eau</option>
+        <option value="grass">Plante</option>
+        <option value="electric">Electrik</option>
+        <option value="ice">Glace</option>
+        <option value="fighting">Combat</option>
+        <option value="poison">Poison</option>
+        <option value="ground">Sol</option>
+        <option value="flying">Vol</option>
+        <option value="psychic">Psy</option>
+        <option value="bug">Insecte</option>
+        <option value="rock">Roche</option>
+        <option value="ghost">Spectre</option>
+        <option value="dragon">Dragon</option>
+        <option value="dark">Ténèbres</option>
+        <option value="steel">Acier</option>
+        <option value="fairy">Fée</option>
+        <option value="normal">Normal</option>
+    </select>
+   </div>
+    <div id="container">
+
+    </div>
+    <div class="pop-text">
+        <div class="close-btn" onclick="closePopText();"></div>
+        <p></p>
+    </div>
+    <div id=animelist>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

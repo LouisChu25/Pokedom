@@ -1,0 +1,170 @@
+@import url('http://fonts.cdnfonts.com/css/pokemon-solid');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.title {
+    text-align: center;
+    color: yellow;
+    margin: auto;
+    font-size: 60px;
+    margin-bottom: 50px;
+    text-shadow: 2px 0 0 #0c04ba, -2px 0 0 #0c04ba, 0 2px 0 #0c04ba, 0 -2px 0 #0c04ba, 1px 1px #0c04ba, -1px -1px 0 #0c04ba, 1px -1px 0 #0c04ba, -1px 1px 0 #0c04ba;
+}
+
+body {
+    background-image: url(img/pokebackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.select {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+#generation {
+    font-size: 20px;
+    color: white;
+    background-color: #fa052a;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.pokecard
+{
+    background-color: pink;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.animecard {
+    text-align: center;
+    background-color: #fa052a;
+    border-radius: 20px;
+    width: 500px;
+    padding: 10px 0px;
+    color: white;
+    margin: auto;
+    margin-top: 100px;margin-bottom: 100px;
+}
+
+.animecard > p {
+    padding: 30px;
+    text-align: justify;
+}
+
+.animecard > h2 {
+    margin-bottom: 30px;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: lightskyblue;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.container_type {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.select_type {
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.pop-text
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 0;
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: lightgrey;
+    width: 500px;
+    max-width: 80%;
+    visibility: hidden;
+}
+
+.close-btn 
+{
+    overflow: hidden;
+    position: relative;
+    border: none;
+    padding: 0;
+    width: 2em; height: 2em;
+    border-radius: 50%;
+    color: white;
+    font: inherit;
+    text-indent: 100%;
+    cursor: pointer;
+    
+}
+
+.close-btn:hover
+{
+    opacity: 0.7;
+}
+
+.close-btn:before, .close-btn:after 
+{
+    position: absolute;
+    top: 15%; left: calc(50% - .0625em);
+    width: .125em; height: 70%;
+    border-radius: .125em;
+    transform: rotate(45deg);
+    background: currentcolor;
+    content: '';
+}
+
+.close-btn:after 
+{ 
+    transform: rotate(-45deg); 
+}
+
+.pop-text {
+    text-align: center;
+}
+
+.pop-text > p {
+    padding: 10px;
+}
+
+/* @media all and (max-width : 768px) {
+    .animecard {
+        width: 300px;
+    }
+
+    .animecard > img {
+        transform: scale(0.7);
+    }
+    .title {
+        font-size: 40px;
+    }
+} */
